@@ -12,8 +12,7 @@
 }
 body{
     font-family:'Roboto', sans-serif ;
-    color: #22394A;
-    
+    color: #22394A; 
 }
 a {
     text-decoration: none;
@@ -159,9 +158,6 @@ label[for="myBurger"]{
 .main__image-index{
     z-index: 1;
 }
-/* ----------------------------------------- */
-
-
 /* --------------------------------------------- */
 /* footer*/
 footer{
@@ -529,7 +525,6 @@ footer a{
     .article__job-image{
         width: 30vw;
     }
-
 }
 @media screen and (min-width: 1168px){
     .main__job-title{
