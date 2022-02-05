@@ -62,7 +62,7 @@ header{
 }
 @keyframes example {
     from {margin-top: 0}
-    to {margin-top: 300px}
+    to {margin-top: 140px}
   }
 #myBurger{
     display: none;
