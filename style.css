@@ -51,9 +51,9 @@ header{
     display:block;
     position: absolute;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; 
     left: 0;
-    right: 0;
+    right: 0; 
     background-color: #22394A;
     animation-name: example;
     animation-duration: 2s;
@@ -111,7 +111,7 @@ label[for="myBurger"]{
     font-weight: lighter;
 }
 .main__button--don-text{
-    font-size: 1.3rem;
+    font-size: 2.5rem;
     background-color: #22394A; 
     color: #E3CDAC;
     font-weight: bolder;
@@ -121,8 +121,8 @@ label[for="myBurger"]{
 .main__button-don{
     animation: bounce; /* referring directly to the animation's @keyframe declaration */
     animation-duration: 5s; /* don't forget to set a duration! */ 
-    grid-row: 4;
-    grid-column: 2 ;
+    grid-row: 3;
+    grid-column: 1/4;
     }
 .blockquote__citation {
     text-align: right;
@@ -318,12 +318,13 @@ footer a{
 /* notre-histoire.html */
 .main__image-fondateur{
     width: 70%;
-    border-radius: 10%;  
+    border-radius: 10%; 
+    margin: 50px; 
 }
 .main__text-fondateur{
-    margin: 10px;
+    margin: 100px;
     margin-bottom: 30px;
-    text-align: center;
+    text-align: justify;
 }
 .main-fondateur{
     margin: 5px;
@@ -419,12 +420,12 @@ footer a{
     }
     /* index.html */
     .main__title{
-        font-size: 3.2rem;
+        font-size: 3.5rem;
     }
     .main__button--don-text{
-       font-size: 2rem;
-
+       font-size: 3rem;
     }
+    
     .aside__article-icon{
         display: none;
     }
@@ -483,7 +484,7 @@ footer a{
          font-size: 4rem;
      }
      .main__button--don-text{
-        font-size: 2.5rem;
+        font-size: 3.7rem;
      }
      .aside div{
          display: flex;
@@ -536,5 +537,10 @@ footer a{
     }
     .main__job-explain{
         font-size: 2.5rem; 
+    }
+    .main__text-fondateur{
+        font-size: 1.5rem;
+        margin-left : 200px;
+        margin-right: 200px;
     }
 }
