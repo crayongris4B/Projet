@@ -186,7 +186,7 @@ video{
     width: 100%;
 }
 source{
-    width: 100%;
+    width: 300px;
 }
 .article-video{
     display: flex;
