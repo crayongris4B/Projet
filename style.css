@@ -64,7 +64,7 @@ header{
 }
 @keyframes example {
     from {margin-top: 0}
-    to {margin-top: 140px}
+    to {margin-top: 105px}
   }
 #myBurger{
     display: none;
@@ -136,7 +136,7 @@ label[for="myBurger"]{
     font-style: bolder;
     border-top: 1px solid #968263;
     border-bottom: 1px solid #968263;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     padding-right: 5px;
     margin: 80px 20px;
     letter-spacing: 2px;
@@ -160,12 +160,15 @@ label[for="myBurger"]{
     color:#968263;
 }
 .aside__article-icon{
-    font-size: 3rem;
+    font-size: 2.4rem;
     margin: 0;
     padding: 0;
 }
 .aside__article-text{
     font-weight: bold;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: orange;
 }
 .main__image-index{
     z-index: 1;
@@ -173,11 +176,11 @@ label[for="myBurger"]{
 .newsLetters{
     display: flex;
     flex-direction: column;
-    width: 80%;
-    margin: 0 auto;
+    align-items: center;
 }
 .newsLetters input{
     background-color: aliceblue;
+    width: 250px;
 }
 /* --------------------------------------------- */
 /* footer*/
@@ -242,7 +245,6 @@ footer a{
 }
 .card__article-image{
      width: 100%; 
-    border-radius: 5% 5% 0 0;
 }
 .collect-elephant{
     background-color: white;
@@ -503,9 +505,7 @@ footer a{
      .aside__article-main{
          display: block;
      }
-     .newsLetters{
-         width: 30%;
-     }
+   
 }
 @media screen and (min-width: 1168px){
     .header__logo-title{
