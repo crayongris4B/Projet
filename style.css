@@ -82,6 +82,7 @@ label[for="myBurger"]{
 }
 .header__logo-title-elephant{
     font-family:'Finger Paint', cursive;
+    width: 20px;
 }
 .header__list-nav a:hover{
     color: #E3CDAC ;
@@ -89,20 +90,21 @@ label[for="myBurger"]{
 }
 /*index.html */
 .main__image-index{
-    height: 120vh;
-  background-image: url("images/page_accueil1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; 
+    background-image: url("images/pexels-rudolf-kirchner-1750820.jpeg");
   /* grid */
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: 1fr 1fr  1fr 1fr;
-  justify-items: center;
-  padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    justify-items: center;
+    padding: 20px;
 }
 .main__title{
     font-size: 3rem;
+    color: #E3CDAC;
     grid-column: 1/4 ;
     grid-row: 1;
     align-self: end;
@@ -120,7 +122,7 @@ label[for="myBurger"]{
 .main__button-don{
     animation: bounce; /* referring directly to the animation's @keyframe declaration */
     animation-duration: 5s; /* don't forget to set a duration! */ 
-    grid-row: 3;
+    grid-row: 4;
     grid-column: 1/4;
     }
 .blockquote__citation {
@@ -410,6 +412,11 @@ footer a{
         color: #968263;
     }
     /* index.html */
+    .main__image-index{
+        background-size: cover;
+        background-image: url("images/pexels-rudolf-kirchner-1750820\ copie.jpeg");
+        background-position: bottom;
+    }
     .main__title{
         font-size: 3.5rem;
     }
@@ -478,6 +485,7 @@ footer a{
         padding: 12px;
      }
      /* index.html */
+    
      .main__title{
          font-size: 4rem;
      }
