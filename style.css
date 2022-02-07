@@ -327,11 +327,18 @@ footer a{
  }
  /* ------------------------------------------ */
 /* faire-un-don.html */
+
 .btn-secondary{
     background-color: #638096;
 }
 .bg-prestige{
-    background-color: #638096;
+    background-color: #4CCEED;
+}
+.bg-premium{
+    background-color: #EDE37B;
+}
+.bg-classique{
+    background-color: #ED6496;
 }
 /* ---------------------------------------------- */
 /* notre-histoire.html */
