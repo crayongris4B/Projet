@@ -182,6 +182,24 @@ label[for="myBurger"]{
     background-color: aliceblue;
     width: 250px;
 }
+video{
+    width: 100%;
+}
+source{
+    width: 100%;
+}
+.article-video{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.article-video p{
+    margin: 10px;
+    font-size: 1.7rem;
+    text-align: center;
+}
 /* --------------------------------------------- */
 /* footer*/
 footer{
@@ -512,6 +530,15 @@ footer a{
      .aside__article-main{
          display: block;
      }
+     video{
+        width: 80%;
+    }
+    source{
+        width: 100%;
+    }
+    .article-video{
+        flex-wrap: nowrap;
+    }
    
 }
 @media screen and (min-width: 1168px){
@@ -573,6 +600,7 @@ footer a{
     .article__job-image{
         width: 30vw;
     }
+
 }
 @media screen and (min-width: 1168px){
     .main__job-title{
