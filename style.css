@@ -36,15 +36,17 @@ header{
     border: 1px solid #22394A; 
     border-top: 0;
     border-left: 0;
-    border-right: 0;
+    border-right: 0; 
+    
 }
 .header__main-logo{
     display: flex;
-    align-items: flex-end;
+    align-items: center;
+    padding-left: 10px;
 }
 .header__nav{
     display: flex;
-    align-items: center;   
+    align-items: center;
 }
 #myBurger[type=checkbox]:checked  ~ .header__list-nav {
     display:block;
@@ -68,8 +70,9 @@ header{
     display: none;
 }
 label[for="myBurger"]{
-    font-size: 50px;
+    font-size: 30px;
     color: #968263;
+    padding-right: 10px;
 }
 .header__list-nav li{
     list-style: none;
@@ -82,18 +85,20 @@ label[for="myBurger"]{
 }
 .header__logo-title-elephant{
     font-family:'Finger Paint', cursive;
-    width: 20px;
 }
 .header__list-nav a:hover{
     color: #E3CDAC ;
     font-weight: bolder;
 }
+ .header__logo{
+    height: 48px;
+} 
 /*index.html */
 .main__image-index{
     background-size: cover;
-    background-position: center;
+    background-position: center; 
     background-repeat: no-repeat;
-    height: 100vh; 
+    height: 80vh; 
     background-image: url("images/pexels-rudolf-kirchner-1750820.jpeg");
   /* grid */
     display: grid;
@@ -128,13 +133,18 @@ label[for="myBurger"]{
 .blockquote__citation {
     text-align: right;
     color: #638096;
-    font-style: italic;
+    font-style: bolder;
     border-top: 1px solid #968263;
     border-bottom: 1px solid #968263;
     font-size: 1.2rem;
     padding-right: 5px;
-    margin: 30px;
+    margin: 80px 20px;
     letter-spacing: 2px;
+}
+.aside__article-main{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
 }
 .aside__article-img{
     display: none;
@@ -160,16 +170,30 @@ label[for="myBurger"]{
 .main__image-index{
     z-index: 1;
 }
+.newsLetters{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
+.newsLetters input{
+    background-color: aliceblue;
+}
 /* --------------------------------------------- */
 /* footer*/
 footer{
     display: flex;
     justify-content: center;
     background-color: #22394A;
+    padding: 40px;
+    margin-top: 30px;
 }
 .footer__elements-element{
-    margin-top: 10px;
+    padding: 20px;
     line-height: 0.5;
+}
+.footer__elements-element a{
+    margin: 25px;
 }
 .footer__elements-social{
     display: flex;
@@ -405,17 +429,19 @@ footer a{
     }
     .header__logo-without, .header__logo-title{
         display: inline;
-        font-size: 1.3rem;
+        font-size: 0.7rem;
     }
-   
+    .header__logo-without{
+        height: 48px;
+    }
     .header__logo-title{
         color: #968263;
+        font-size: 1.5rem;
     }
     /* index.html */
     .main__image-index{
         background-size: cover;
         background-image: url("images/pexels-rudolf-kirchner-1750820\ copie.jpeg");
-        background-position: bottom;
     }
     .main__title{
         font-size: 3.5rem;
@@ -423,7 +449,6 @@ footer a{
     .main__button--don-text{
        font-size: 3rem;
     }
-    
     .aside__article-icon{
         display: none;
     }
@@ -474,6 +499,12 @@ footer a{
         background-size: contain;
         background-attachment: fixed;
         background-repeat: no-repeat;
+     }
+     .aside__article-main{
+         display: block;
+     }
+     .newsLetters{
+         width: 30%;
      }
 }
 @media screen and (min-width: 1168px){
