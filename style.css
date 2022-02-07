@@ -205,7 +205,7 @@ source{
 footer{
     display: flex;
     justify-content: center;
-    background-color: #22394A;
+    background-image: linear-gradient(180deg, #5d6366 0, #415460 25%, #1f4459 50%, #003553 75%, #00264d 100%);
     padding: 40px;
     margin-top: 30px;
 }
@@ -297,11 +297,10 @@ footer a{
     display: flex;
     flex-wrap: wrap;
      line-height: 0.4;
-     justify-content: center;
+     justify-content: space-around;
      text-align: center;
-     background-color: rgb(241, 242, 242);
-     margin: 100px 0px;
-     border: 5px solid #638096;
+    background-color: lightgrey;
+    margin: 60px;
  }
  .adress__card{
      margin: 50px;
@@ -342,6 +341,7 @@ footer a{
  }
  .adress__card-adress{
      color: #638096;
+     line-height: 20px;
  }
  /* ------------------------------------------ */
 /* faire-un-don.html */
@@ -539,7 +539,6 @@ footer a{
     .article-video{
         flex-wrap: nowrap;
     }
-   
 }
 @media screen and (min-width: 1168px){
     .header__logo-title{
