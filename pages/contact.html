@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- DESCRIPTION -->
-    <meta name="description" content=" Chaque année nous organisons Elephant Day et Elephant Collect, afin d'aider les éléphants.
-    Sauvons les éléphants!">
+    <meta name="description" content="Contactez-nous. Sauvons les éléphants!">
     <!-- FAVICON -->
     <link rel="apple-touch-icon" sizes="57x57" href="favicon_io.ico/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="favicon_io.ico/apple-icon-60x60.png">
@@ -37,15 +36,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- FRAMEWORK BOOTSTRAP ICON -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="/style.css">
-    <title>Evènements | Elephant ASSOCIATION</title>
+    <link rel="stylesheet" href="../style.css">
+    <title>Contact | Elephant ASSOCIATION</title>
 </head>
 <body>
     <div class="contain">
         <header>
             <div class="header__main-logo">
-                <a href="index.html"><img src="/images/logo.png" alt="Logo Elephant Association" class="header__logo"></a>
-                <a href="index.html"><img src="/images/logo-without.png" alt="Logo sans texte Elephant Association"    class="header__logo-without"></a>
+                <a href="index.html"><img src="images/logo.png" alt="Logo Elephant Association" class="header__logo"></a>
+                <a href="index.html"><img src="images/logo-without.png" alt="Logo sans texte Elephant Association"    class="header__logo-without"></a>
                 <a href="index.html" class="header__logo-title">
                     <span class="header__logo-title-elephant">ELEPHANT</span> 
                     <span class="header__logo-title-association">ASSOCIATION</span> 
@@ -55,30 +54,44 @@
                 <label for="myBurger">☰</label>
                 <input type="checkbox" id="myBurger" name="myBurger">
                 <ul class="header__list-nav">
-                   <li><a href="histoire.html" class="header__list-nav-pipe">Histoire</a></li>
-                   <li><a href="donation.html" class="header__list-nav-pipe">Faire un Don</a></li>
-                   <li><a href="evenements.html" class="header__list-nav-pipe">Évènements</a></li>
-                   <li><a href="contact.html" class="header__list-nav-pipe">CONTACT</a></li>
+                   <li><a href="histoire.html">Histoire</a></li>
+                   <li><a href="donation.html">Faire un Don</a></li>
+                   <li><a href="evenements.html">Évènements</a></li>
+                   <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </nav>
         </header>
         <!-- MAIN -->
-        <h1 class="title-event">Évenements</h1>
-        <main class="card-event">
-            <article class="card__article elephant-event">
-                <img src="/images/elephant-day.jpg" alt="Elephant en activité : paint"  class="card__article-image">
-                <h2 class="card__article-title">Elephant Day</h2>
-                <p class="card__article-text">Le 1er Juin de chaque année, nous   organisons la journée mondiale de  l'éléphant. <br>
-                Paint-Ball géant dans chaque capitale du monde.<br><br>
-                </p>
-            <p class="card__a"><a href="">En savoir plus ></a> </p>
-            </article>
-            <article class="card__article collect-elephant">
-                <img src="/images/collect-cacahuete.jpg" alt="Grande collecte cacahuète" class="card__article-image cacahuete">
-                <h2 class="card__article-title">Elephant Collect</h2>
-                <p class="card__article-text">Tous les SuperMarchés du monde ont mit en place une collecte de cacahuètes. Oui, les éléphants en rafolent! <br>Faites une bonne action lors de vos courses...</p>
-                <p class="card__a"><a href="">En savoir plus ></a> </p>
-            </article> 
+        <main>
+            <h1 class="title__form">Contact</h1>
+                <div class="form">
+                <!-- <img src="images/form.png" alt="formulaire de contact" class="form__bg"> -->
+                <!-- Netlify is used to retrieve user data -->
+                <form action="POST" data-netlify="true" netlify-honeypot="bot-field" >
+                    <div>
+                        <label for="name">Votre nom *</label> <br>
+                            <input type="text" id="name" name="name" required placeholder="Dupond" class="form__input-name"> <br>
+                            <label for="email">Votre email *</label><br>
+                            <input type="email" id="email" name="email" required placeholder="votre@email.com" class="form__input-email"><br>
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Votre message ..." class="form__input-message"></textarea><br>
+                            <button class="form__button"type="submit" id="send">Envoyez 📮</button>
+                    </div>
+                </form>
+                </div>
+            <adress class="adress">
+                <div class="adress__card">
+                    <p class="adress__card-title">Adresse</p>
+                    <a href="https://www.google.fr/maps/place/Rue+Robert+le+Coin,+75016+Paris/@48.8551691,2.2711101,17z/data=!3m1!4b1!4m5!3m4!1s0x47e67aab083259af:0xe6386cc453d4300b!8m2!3d48.8551656!4d2.2732988" target="_BLANK" class="adress__card-adress">Elephant Association<br>1 Rue Robert le Coin<br>75016 Paris</a>
+                </div>
+                <div class="adress__card">
+                    <p class="adress__card-title">Opportunités de carrière</p>
+                    <a href="mailto:email@elephant.fr " class="adress__card-adress">À l'attention de Ginette GRENOUILLE<br>email@elephant.fr</a>
+                </div>
+                <div class="adress__card">
+                    <p class="adress__card-title">Public Relation</p>
+                    <a href="mailto:email@elephant.fr "class="adress__card-adress">À l'attention de Victor MOINEAU <br>recrutement@elephant.fr</a>
+                </div>
+            </adress>
         </main>
         
         <footer>
@@ -93,6 +106,6 @@
            </div>
         </footer>
     </div>
-    <script src="/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
