@@ -6,23 +6,23 @@
 #22394A charcoal
 #638096 slate gray
 */
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
-    font-family:'Roboto', sans-serif ;
-    color: #22394A; 
+body {
+    font-family: "Roboto", sans-serif;
+    color: #22394a; 
 }
 a {
     text-decoration: none;
     color: #968263;
 }
-a:hover{
-    color: #E3CDAC;
+a:hover {
+    color: #E3CDac;
 }
-/* header */
-.header__list-nav{
+/*header*/
+.header__list-nav {
     display: none;
 }
 .header__logo-title, .header__logo-without{
